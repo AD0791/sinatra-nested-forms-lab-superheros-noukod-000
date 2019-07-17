@@ -8,7 +8,7 @@ class App < Sinatra::Base
       erb :'../views/super_hero'
     end
 
-    post '/team' do
+    post '/teams' do
       #binding.pry
       @team_name = params['team']['name']
       @team_motto = params['team']['motto']
