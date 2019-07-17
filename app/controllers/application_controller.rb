@@ -11,6 +11,7 @@ class App < Sinatra::Base
     post '/team' do
       binding.pry
       @team_name = params['team']['name']
+      @team_name = params['team']['motto']
       erb :'../views/team'
     end
 
